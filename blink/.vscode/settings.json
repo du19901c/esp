@@ -1,0 +1,4 @@
+{
+    "C_Cpp.default.compilerPath": "c:\\esp\\esp-idf\\frameworks\\esp-idf-v5.1.1\\examples\\get-started\\blink\\main\\CMakeLists.txt",
+    "idf.adapterTargetName": "esp32"
+}
