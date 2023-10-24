@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/esp-idf/frameworks/esp-idf-v5.1.1/components/driver/gpio/include",
+                "${workspaceFolder}/esp-idf/frameworks/esp-idf-v5.1.1/components/driver/gpio/include/driver"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        }
+    ],
+    "version": 4
+}
