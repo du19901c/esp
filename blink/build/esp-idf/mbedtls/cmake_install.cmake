@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("C:/esp/blink/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 

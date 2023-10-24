@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/CMakeFiles/bootloader
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/CMakeFiles/bootloader.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/CMakeFiles/bootloader-complete.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/esp/blink/build/CMakeFiles/bootloader
+C:/esp/blink/build/CMakeFiles/bootloader.rule
+C:/esp/blink/build/CMakeFiles/bootloader-complete.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/esp/blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

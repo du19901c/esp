@@ -1,4 +1,4 @@
-# Install script for directory: C:/esp/esp-idf/frameworks/esp-idf-v5.1.1/examples/get-started/blink/managed_components/espressif__led_strip
+# Install script for directory: C:/esp/blink/managed_components/espressif__led_strip
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

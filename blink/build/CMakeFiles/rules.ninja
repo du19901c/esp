@@ -1362,7 +1362,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\esp\esp-idf\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\esp\esp-idf\frameworks\esp-idf-v5.1.1\examples\get-started\blink -BC:\esp\esp-idf\frameworks\esp-idf-v5.1.1\examples\get-started\blink\build
+  command = C:\esp\esp-idf\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\esp\blink -BC:\esp\blink\build
   description = Re-running CMake...
   generator = 1
 
