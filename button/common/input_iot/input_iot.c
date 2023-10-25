@@ -1,44 +1,31 @@
 #include <stdio.h>
-#include "esp_log.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/queue.h"
 #include "driver/gpio.h"
 #include "input_iot.h"
 
-input_callback_t input_callback = NULL;
+#define INPUT_PIN 0
+#define LED_PIN 2
 
-IRAM_ATTR static void gpio_input_handler(void *arg)
+int state = 0;
+QueueHandle_t interputQueue;
+
+void IRAM_ATTR gpio_interrupt_handler(void *args)
 {
-    int gpio_num = (uint32_t)arg;
-    // Handle GPIO interrupt here
-    input_callback(gpio_num);
+    xQueueSendFromISR(interputQueue, &args, NULL);
 }
 
-esp_err_t input_io_create(gpio_num_t gpio_num, interrupt_type_edge_t edge)
+void gpio_interrupt_init(gpio_num_t gpio_num, gpio_int_type_t edge)
 {
-    esp_err_t err = ESP_OK;
-    esp_rom_gpio_pad_select_gpio(gpio_num);
-    gpio_set_direction(gpio_num, GPIO_MODE_INPUT);
-    gpio_set_pull_mode(gpio_num, GPIO_PULLUP_ONLY);
-    gpio_set_intr_type(gpio_num, edge);
-    err = gpio_install_isr_service(0);
-    if (err != ESP_OK)
-    {
-        return err;
-    }
-    err = gpio_isr_handler_add(gpio_num, gpio_input_handler, (void *)gpio_num);
-    return err;
-}
+    gpio_config_t io_conf;
+    io_conf.intr_type = edge;
+    io_conf.pin_bit_mask = (1ULL << gpio_num);
+    io_conf.mode = GPIO_MODE_INPUT;
+    io_conf.pull_up_en = 1;
+    io_conf.pull_down_en = 0;
+    gpio_config(&io_conf);
 
-int input_io_get_level(gpio_num_t gpio_num)
-{
-    return gpio_get_level(gpio_num);
-}
-
-esp_err_t input_set_callback(void *cb)
-{
-    // Implement this function to set a callback function for GPIO interrupts.
-    // You can store the provided callback function pointer for future use.
-    // Example: callback_function = (your_callback_function_type)cb;
-    // ...
-    input_callback = cb;
-    return ESP_OK;
+    gpio_install_isr_service(0);
+    gpio_isr_handler_add(gpio_num, gpio_interrupt_handler, (void *)gpio_num);
 }

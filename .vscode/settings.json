@@ -26,5 +26,10 @@
         "functional": "c",
         "regex": "c"
     },
-    "C_Cpp.default.compilerPath": "c:\\esp\\esp-idf\\frameworks\\esp-idf-v5.1.1\\examples\\get-started\\blink\\main\\CMakeLists.txt"
+    "C_Cpp.default.compilerPath": "c:\\esp\\esp-idf\\frameworks\\esp-idf-v5.1.1\\examples\\get-started\\blink\\main\\CMakeLists.txt",
+    "cmake.sourceDirectory": "C:/esp/button/main",
+    "idf.adapterTargetName": "esp32",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ]
 }

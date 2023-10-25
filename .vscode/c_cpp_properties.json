@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/esp-idf/frameworks/esp-idf-v5.1.1/components/driver/gpio/include",
-                "${workspaceFolder}/esp-idf/frameworks/esp-idf-v5.1.1/components/driver/gpio/include/driver"
+                "${workspaceFolder}/esp-idf/frameworks/esp-idf-v5.1.1/components/driver/gpio/include/driver",
+                "${workspaceFolder}/esp-idf/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel-SMP/include"
             ],
             "defines": [
                 "_DEBUG",
